@@ -1,0 +1,10 @@
+auto eth0
+iface eth0 inet static
+address 112.108.40.74
+netmask 255.255.255.0
+network 112.108.40.0
+gateway 112.108.40.1
+broadcast 8.8.8.8
+
+auto lo
+iface lo inet loopback
