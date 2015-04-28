@@ -571,3 +571,98 @@ mv Driver_setting.sh AP_Driver.sh
 ls
 sudo /usr/sbin/hostapd /etc/hostapd/hostapd.conf
 sudo reboot
+cat /etc/iptables.ipv4.nat 
+cd /usr/sbin
+ls
+nano hostapd
+chmod
+ls -al hostapd
+sudo /usr/sbin/hostapd /etc/hostapd/hostapd.conf
+sudo service isc-dhcp-server start
+sudo service isc-dhcp-server restart
+sudo /usr/sbin/hostapd /etc/hostapd/hostapd.conf
+ls
+cd config
+ls
+cat etc_dhcp_dhcpd.conf 
+ls
+cat etc_default_hostapd 
+cat etc_hostapd_hostapd.conf
+sudo service hostapd stop
+sudo /usr/sbin/hostapd
+cat /etc/hostapd/hostapd.conf 
+cd /
+ls
+git status
+sudo git add etc home
+sudo git commit -m "hostapd working but dhcp not"
+git status
+git commit -a
+sudo git commit -a
+sudo git push PI master
+git status
+ls /usr
+cd /usr/bin
+l
+ls
+ls | grep isc
+ls | grep dhcp
+service --status
+shutdown -h 0
+sudo shutdown -h 0
+ls
+sudo /usr/sbin/hostapd /etc/hostapd/hostapd.conf
+service hostapd status
+service isc-dhcp-server status
+service isc-dhcp-server start
+ls
+cd config
+ls
+cat /etc/default/isc-dhcp-server 
+ifconfig
+cat /etc/dhcp/dhcpd.conf
+ls
+ifconfig wlan0
+iwconfig
+ifup wlan0
+sudo ifup wlan0
+iwconfig
+sudo nano /etc/network/interfaces 
+sudo reboot
+ls
+cd /etc/default
+ls
+ls |grep ifplu
+sudo nano ifplugd 
+ls
+sudo cp ifplugd /home/pi/config/etc_default_ifplugd
+ls /home/pi/config/etc_default_ifplugd 
+cat /home/pi/config/etc_default_ifplugd 
+ls
+sudo cp ifplugd ifplugd.bak
+sudo nano ifplugd
+cat ifplugd
+sudo shutdown -h 0
+ls
+ifconfig
+iwconfig
+service isc-dhcp-server status
+service isc-dhcp-server start
+service isc-dhcp-server status
+cd /usr/bin
+ls
+ls |grep dhcp
+ls |grep isc
+cd ..
+ls
+ifconfig
+iwconfig
+cd /home/pi
+ls
+cd config
+ls
+cat etc_default_ifplugd 
+sudo cp /etc/default/ifplugd etc_default_ifplugd
+ls
+cat etc_default_ifplugd 
+sudo reboot
