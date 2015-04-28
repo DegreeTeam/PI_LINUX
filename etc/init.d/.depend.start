@@ -1,15 +1,18 @@
-TARGETS = triggerhappy ifplugd rsyslog bootlogs motd killprocs sudo hostapd dbus single dphys-swapfile rsync cron ssh ntp bluetooth avahi-daemon lightdm plymouth rc.local rmnologin
+TARGETS = rsyslog triggerhappy ifplugd hostapd bootlogs motd killprocs sudo dbus isc-dhcp-server single dphys-swapfile rsync cron ssh ntp avahi-daemon bluetooth lightdm cups saned plymouth rc.local rmnologin
 INTERACTIVE =
 dbus: rsyslog
+isc-dhcp-server: rsyslog
 single: killprocs bootlogs motd
 dphys-swapfile: rsyslog
 rsync: rsyslog
 cron: rsyslog
 ssh: rsyslog
 ntp: rsyslog
-bluetooth: rsyslog dbus
 avahi-daemon: dbus rsyslog
+bluetooth: rsyslog dbus
 lightdm: dbus
-plymouth: triggerhappy ifplugd bluetooth rsyslog dbus avahi-daemon lightdm bootlogs motd dphys-swapfile rsync cron sudo ssh ntp hostapd
-rc.local: triggerhappy ifplugd bluetooth rsyslog dbus avahi-daemon lightdm bootlogs motd dphys-swapfile rsync cron sudo ssh ntp hostapd
-rmnologin: sudo triggerhappy ifplugd bluetooth rsyslog dbus avahi-daemon lightdm bootlogs motd dphys-swapfile rsync cron ssh ntp hostapd
+cups: rsyslog avahi-daemon
+saned: rsyslog dbus avahi-daemon
+plymouth: avahi-daemon dbus rsyslog triggerhappy ifplugd hostapd bluetooth lightdm isc-dhcp-server bootlogs motd cups dphys-swapfile rsync cron sudo ssh ntp saned
+rc.local: avahi-daemon dbus rsyslog triggerhappy ifplugd hostapd bluetooth lightdm isc-dhcp-server bootlogs motd cups dphys-swapfile rsync cron sudo ssh ntp saned
+rmnologin: sudo avahi-daemon dbus rsyslog triggerhappy ifplugd hostapd bluetooth lightdm isc-dhcp-server bootlogs motd cups dphys-swapfile rsync cron ssh ntp saned

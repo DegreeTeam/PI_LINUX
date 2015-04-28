@@ -25,4 +25,6 @@ messagebus:x:104:106::/var/run/dbus:/bin/false
 usbmux:x:105:46:usbmux daemon,,,:/home/usbmux:/bin/false
 lightdm:x:106:109:Light Display Manager:/var/lib/lightdm:/bin/false
 colord:x:107:111:colord colour management daemon,,,:/var/lib/colord:/bin/false
-avahi:x:108:112::/var/run/avahi-daemon:/bin/false
+avahi:x:108:112:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/bin/false
+hplip:x:109:7:HPLIP system user,,,:/var/run/hplip:/bin/false
+saned:x:110:115::/home/saned:/bin/false

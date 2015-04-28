@@ -54,3 +54,6 @@ gpio:!::pi
 scanner:!::
 colord:!::
 avahi:!::
+bluetooth:!::
+ssl-cert:!::
+saned:!::

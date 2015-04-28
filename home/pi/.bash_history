@@ -666,3 +666,18 @@ sudo cp /etc/default/ifplugd etc_default_ifplugd
 ls
 cat etc_default_ifplugd 
 sudo reboot
+cat /etc/default/isc-dhcp-server 
+cd /
+ls
+git status
+ls
+git status
+cat /etc/default/ifplugd
+git status
+git add *
+sudo git add *
+sudo git add etc home
+ls
+sudo git commit -m "ifplugd is changed"
+git status
+sudo git push PI master
