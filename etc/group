@@ -51,3 +51,7 @@ lightdm:x:109:
 indiecity:x:1001:root
 spi:x:1002:pi
 gpio:x:1003:pi
+scanner:x:110:
+colord:x:111:
+avahi:x:112:
+bluetooth:x:113:

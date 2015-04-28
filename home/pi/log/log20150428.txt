@@ -1,0 +1,193 @@
+    1  ls
+    2  ls /
+    3  cd /
+    4  ls
+    5  cd home
+    6  ls
+    7  cd pi
+    8  ls
+    9  cd Desktop/
+   10  ls
+   11  cd ..
+   12  ls
+   13  cd ..
+   14  cd .
+   15  l
+   16  cd ..
+   17  ls
+   18  cd home
+   19  ls
+   20  cd pi
+   21  ls
+   22  cd Desktop/
+   23  ls
+   24  rm *
+   25  ls
+   26  sudo rm *
+   27  ls
+   28  cd ..
+   29  ls
+   30  cd python_games/
+   31  ls
+   32  cd ..
+   33  ls
+   34  sudo rm pyhon_games
+   35  rm help
+   36  rm -h
+   37  rm --help
+   38  ls
+   39  rm -r python_games/
+   40  ls
+   41  rm ocr_pi.png 
+   42  ls
+   43  rm Desktop/
+   44  rm -r Desktop/
+   45  ls
+   46  cd .
+   47  cd ..
+   48  ls
+   49  cd pi
+   50  ls
+   51  cd ..
+   52  ls
+   53  cd ..
+   54  ls
+   55  cd bin
+   56  ls
+   57  clear
+   58  ls
+   59  cd ..
+   60  ls
+   61  cd boot
+   62  ls
+   63  cd ..
+   64  ls
+   65  cd etc
+   66  ls
+   67  cd /usr
+   68  ls
+   69  cd /sys
+   70  ls
+   71  cd /root
+   72  ls
+   73  cd ..
+   74  cd /
+   75  ls
+   76  git init
+   77  sudo git init
+   78  git add etc home
+   79  sudo git add etc home
+   80  sudo git commit -m "Init"
+   81  ls
+   82  git remote add PI https://github.com/DegreeTeam/PI_LINUX.git
+   83  sudo git remote add PI https://github.com/DegreeTeam/PI_LINUX.git
+   84  git push PI master
+   85  ls
+   86  cd lib
+   87  ls
+   88  cd media
+   89  ls
+   90  cd /media
+   91  ls
+   92  cd /mnt
+   93  ls
+   94  cd opt
+   95  cd /opt
+   96  ls
+   97  cd /proc
+   98  ls
+   99  cd /sys
+  100  ls
+  101  git
+  102  cd /
+  103  ls
+  104  sudo nano .gitignore
+  105  git status
+  106  sudo git status
+  107  sudo nano .gitignore
+  108  cd sys
+  109  ls
+  110  cd kernel/
+  111  ls
+  112  cd ..
+  113  ls
+  114  cd firmware
+  115  ls
+  116  cd ..
+  117  cd fs
+  118  ls
+  119  cd ..
+  120  cd module
+  121  ls
+  122  cd ..
+  123  ls
+  124  sudo nano .gitignore 
+  125  ls
+  126  git status
+  127  git add .gitignore
+  128  sudo git add .gitignore
+  129  sudo git add *
+  130  git status
+  131  git add etc
+  132  sudo git add etc
+  133  git sutats
+  134  git status
+  135  git commit -m "git ignor file add"
+  136  sudo git commit -m "git ignor file add"
+  137  sudo git push PI master
+  138  ls
+  139  cd home
+  140  ls
+  141  mkdir script
+  142  cd pi
+  143  ls
+  144  mkdir script
+  145  ls
+  146  cd script/
+  147  ls
+  148  nano BLE_Setting.sh
+  149  nano BLE_Setting.txt
+  150  lsusb
+  151  hciconfig
+  152  sudo hciconfig
+  153  sudo apt-get install hciconfig
+  154  hciconfig
+  155  hci
+  156  hciconfig
+  157  ls
+  158  cd ..
+  159  ls
+  160  hciconfig
+  161  locate hciconfig
+  162  cd /
+  163  find -name "*hci*"
+  164  find -name "*hciconfig*"
+  165  sudo find -name "*hciconfig*"
+  166  hciconfig
+  167  cdcd /usr/share/bash-completion/completions/hciconfig
+  168  /usr/share/bash-completion/completions/hciconfig
+  169  sudo /usr/share/bash-completion/completions/hciconfig
+  170  cd /usr/share/bash-completion/completions/hciconfig
+  171  cd /usr/share/bash-completion/completions
+  172  ls
+  173  nano hciconfig
+  174  lsusb
+  175  hcitool
+  176  echo $HISTSIZE
+  177  pwd
+  178  ls -al
+  179  cd ..
+  180  ls
+  181  cd ..
+  182  cd /
+  183  ls
+  184  ls -al
+  185  ls -l.bash_history
+  186  ls -l .bash_history
+  187  history
+  188  ls
+  189  cd home
+  190  ls
+  191  cd pi
+  192  ls
+  193  history > log.txt

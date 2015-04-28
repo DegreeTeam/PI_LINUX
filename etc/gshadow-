@@ -51,3 +51,6 @@ lightdm:!::
 indiecity:!::root
 spi:!::pi
 gpio:!::pi
+scanner:!::
+colord:!::
+avahi:!::
