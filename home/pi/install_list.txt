@@ -1,0 +1,2 @@
+sudo apt-get install bluez-utils install
+sudo apt-get install hostapd isc-dhcp-server

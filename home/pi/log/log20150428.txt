@@ -191,3 +191,64 @@
   191  cd pi
   192  ls
   193  history > log.txt
+  194  ls
+  195  cat log.txt
+  196  ls
+  197  mv log.txt log20150428.txt
+  198  ls
+  199  mkdir log
+  200  mv log20150428.txt  log
+  201  ls
+  202  cd log
+  203  ls
+  204  cd ..
+  205  hciconfig
+  206  cd dev
+  207  ls
+  208  cd /dev
+  209  ls
+  210  cd bus
+  211  ls
+  212  cd usb
+  213  ls
+  214  lsubs
+  215  lsusb
+  216  cd 001
+  217  ls
+  218  hciconfig
+  219  sudo apt-get cache hciconfig
+  220  sudo apt-get -cache hciconfig
+  221  sudo apt-get install hciconfig
+  222  sudo apt-get install bluez-utils
+  223  ls
+  224  cd /
+  225  cd home
+  226  ls
+  227  cd pi
+  228  ls
+  229  cd log
+  230  history
+  231  hciconfig
+  232  ls
+  233  history
+  234  ls
+  235  cd ..
+  236  ls
+  237  nano install_list.txt
+  238  ls
+  239  cd log
+  240  ls
+  241  cat log20150428.txt 
+  242  ls
+  243  history > log20150428.txt 
+  244  cat log20150428.txt 
+  245  ls
+  246  histyor
+  247  histyoy
+  248  history
+  249  ls
+  250  history >log20150428.txt 
+  251  ls
+  252  history >> log20150428.txt 
+  253  cat log20150428.txt 
+  254  history > log20150428.txt 
