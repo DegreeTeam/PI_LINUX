@@ -1,2 +1,4 @@
 sudo apt-get install bluez-utils install
-sudo apt-get install hostapd isc-dhcp-server
+sudo apt-get install hostapd
+sudo apt-get install isc-dhcp-server -y
+sudo apt-get install libasound2-dev

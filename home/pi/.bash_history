@@ -681,3 +681,123 @@ ls
 sudo git commit -m "ifplugd is changed"
 git status
 sudo git push PI master
+service isc-dhcp-server status
+service isc-dhcp-server start
+sudo apt-get install isc-dhcp-server -y
+service isc-dhcp-server status
+apt-get install
+cd 
+cd /
+l
+cd /
+ls
+git status
+sudo git status
+git add etc home
+sudo git add etc home
+sudo git commit -m "AP success"
+git status
+git commit -a 
+sudo git commit -a 
+git status
+sudo git status
+sudo git push PI master
+ls
+cd home
+ls
+cd pi
+ls
+cd script/
+ls
+cd ..
+ls
+cd in
+nano install_list.txt 
+sudo reboot
+sudo shutdown -h 0
+ifconfig
+ls
+cd source
+ls
+vi broad.c
+./broad
+vi broad.c
+gcc broad broad.c
+gcc -o broad broad.c
+clear
+./broad
+vi broad.c
+gcc -o broad broad.c
+./broad
+vi broad.c
+./broad
+vi broad.c
+gcc -o broad broad.c
+./broad
+vi broad.c
+gcc -o broad broad.c
+vi broad.c
+gcc -o broad broad.c
+./broad
+vi broad.c
+gcc -o broad broad.c
+./broad
+nano broad.c
+gcc -o broad broad.c 
+nano broad.c
+gcc -o broad broad.c 
+./broad
+nano broad.c
+gcc -o broad broad.c 
+./broad
+vi broad.c
+gcc -o broad broad.c 
+./broad
+vi broad.c
+gcc -o broad broad.c 
+./broad
+ifconfig
+cd 
+ls
+cd source/
+ls
+nano broad
+nano broad.c
+ls
+git clone https://github.com/DegreeTeam/HamProject.git
+l;s
+ls
+cd HamProject/
+ls
+cd audio
+ls
+cp main.cpp ../
+ls
+cd ..
+ls
+cd HamProject
+ls
+cd audio
+ls
+mv main.cpp ../../
+ls
+cd ..
+ls
+cd ..
+ls
+nano main.cpp 
+ls
+cd ..
+ls
+nano install_list.txt 
+ls
+sudo apt-get install libasound2-dev
+sudo apt-get install libasound2-dev -y
+ls
+cd source/
+ls
+g++ -o adc main.cpp -lasound
+aplay -l
+ls
+./adc
+ls
