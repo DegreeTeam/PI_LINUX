@@ -801,3 +801,63 @@ aplay -l
 ls
 ./adc
 ls
+git status
+cd /
+git status
+sudo git status
+sudo git add etc home
+sudo git status
+sudo git commmit -all
+sudo git commit -all
+sudo git commit -a
+git status
+sudo git push PI master
+sudo shutdown -h 0
+ls
+cd /
+git status
+cd /
+cd
+ls
+cd source/
+ls
+cd HamProject/
+l
+ls
+cd audio/
+ls
+cd..
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+mkdir test
+cd test
+ls
+wget http://www.robotpilot.net/file/test.wav
+ls
+sudo apt-get install alsa-utils
+sudo modprobe snd_bcm2835
+modprobe
+modprobe -h
+modprobe -c
+modprobe -c grep | alsa
+sudo amixer
+amixer -h
+amixer cget
+sudo amixer
+aplay -l
+sudo amixer cset numid=3 1
+sudo aplay test.wav
+sudo amixer -c 0 cget
+amixer
+cd /
+find -name "*config.txt*"
+sudo find -name "*config.txt*"
+ls
+cd boot
+ls
+sudo nano config.txt 
+sudo reboot
