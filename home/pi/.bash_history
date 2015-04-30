@@ -861,3 +861,354 @@ cd boot
 ls
 sudo nano config.txt 
 sudo reboot
+raspi-config
+sudo raspi-config
+amixer
+cd
+ls
+cd test
+ls
+aplay test.wav
+ls
+aplay test.wav
+aplay /usr/share/sounds/alsa/Front_Center.wav
+ls
+aplay /usr/share/sounds/alsa/Front_Center.wav
+amixer cset numid 3 0
+
+aplay
+aplay -l
+aplay /usr/share/sounds/alsa/Front_Center.wav
+aplay -l
+amixer cset numid 3 1
+amixer cset numid= 3 1
+amixer cset numid=3 1
+aplay /usr/share/sounds/alsa/Front_Center.wav
+ls
+cd ..
+ls
+cd source/
+ls
+nano main.cpp 
+aplay -l
+aplay -L
+sudo arecord -D "plughw:0,0" -q -d 5 -f S16_LE -t wav -r 16000 > file.wav
+arecord -D "plughw:1,0" -q -d 5 -f S16_LE -t wav -r 16000 > file.wav
+arecord -D "plughw:0,0" -q -d 5 -f S16_LE -t wav -r 16000 > file.wav
+arecord -D "plughw:1,0" -q -d 5 -f S16_LE -t wav -r 16000 > file.wav
+arecord -D "default" -q -d 5 -f S16_LE -t wav -r 16000 > file.wav
+ls
+nano main.cpp 
+ls
+g++ -o adc main.cpp  -lasound
+./adc
+ls
+./adc
+adc
+ls
+./broad 
+ls
+./adc
+nano main.cpp 
+g++ -o adc main.cpp  -lasound
+./adc
+nano main.cpp 
+g++ -o adc main.cpp  -lasound
+./adc
+arecord -t wav -max-file_time 30 mon.wav
+arecord --help
+arecord -l
+arecord -L
+arecord -l
+ls
+nano main.cpp
+aplay -l
+arecord -l
+nano main.cpp
+g++ -o adc main.cpp -lasound
+./adc
+nano main.cpp
+ls
+arecord -l
+arecord -D "plughw:1,0" -q -d 5 -f S16_LE -t wav -r 16000 > file.wav
+ls
+aplay file.wav
+arecord -D "plughw:1,0" -q -d 5 -f S16_LE -t wav -r 48000 > file.wav
+aplay file.wav
+ls
+nano main.cpp 
+g++ -o adc main.cpp -lasound
+./adc
+ls
+./adc
+ls
+cd /
+git status
+sudo git status
+git commit -a 
+sudo git commit -a 
+git status
+sudo git status
+sudo git push PI master
+cd
+ls
+
+ls
+nano broad
+nano broad.c
+ls
+./adc
+ls
+ls
+cd source
+ls
+vi broad.c
+vi test.c
+gcc -o test test.c
+vi test.
+gcc -o test test.c
+vi test.c
+cd
+ls
+cd source
+ls
+vi main.cpp
+cd source
+ls
+vi test.c
+vi main.cpp
+test.c:(.text+0x270): undefined reference to `snd_pcm_hw_params_get_period_size'
+test.c:(.text+0x2a8): undefined reference to `snd_pcm_hw_params_get_period_time'
+test.c:(.text+0x2ec): undefined reference to `snd_pcm_readi'
+test.c:(.text+0x324): undefined reference to `snd_pcm_prepare'
+test.c:(.text+0x34c): undefined reference to `snd_strerror
+clear
+gcc -o test test.c
+cd ..
+ls
+cd test
+ls
+cd source
+cd ../source
+ls
+gcc -o test test.c
+vi test.c
+gcc -o test test.c
+gcc -o -lasound test test.c
+gcc -o test test.c -lasound
+./test
+vi test.c
+gcc -o test test.c -lasound
+./test
+sudo shutdown -h0
+sudo shutdown -h
+sudo shutdown -h 0
+ls
+cd source
+ls
+vi broad.c
+vi test.c
+vi broad.c
+gcc -o test test.c -alsound
+gcc -o test test.c -lasound
+./test
+vi broad.c
+vi test.c
+gcc -o test test.c -lasound
+./test
+gcc -o test test.c -lasound
+./test
+vi test.c
+gcc -o test test.c -lasound
+./test
+vi test.c
+gcc -o test test.c -lasound
+./test
+vi test.c
+gcc -o test test.c -lasound
+ls
+
+vi test.c
+gcc -o test test.c -lasound
+./test
+gcc -o test test.c -lasound
+./test
+gcc -o test test.c -lasound
+./test
+vi test
+vi test.c
+gcc -o test test.c -lasound
+./test
+vi test.c
+gcc -o test test.c -lasound
+./test
+vi test.c
+./test
+gcc -o test test.c -lasound
+./test
+vi test.c
+./test
+vi test.c
+gcc -o test test.c -lasound
+./test
+vi test.c
+gcc -o test test.c -lasound
+./test
+vi test.c
+gcc -o test test.c -lasound
+./test
+gcc -o test test.c -lasound
+./test
+vi test.c
+./test
+sudo shutdown -h 0
+cd source
+gedit test.c
+edit test.c
+vi test.c
+cd
+clear
+ifconfig
+sudo nano /etc/network/interfaces
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+sudo nano /etc/network/interfaces
+cd source
+ls
+vi test.c
+clear
+vi test.c
+sudo nano /etc/network/interfaces
+sudo etc/hostapd/hostapd.conf
+cd etc
+cd ..
+cd etc
+cd /etc
+ls
+cd hostapd/
+ls
+vi hostapd.conf
+cat hostapd.conf 
+sudo shutdown -h 0
+lsusb
+ls
+shutdown -h 0
+shdo shutdown -h 0
+sudo shdo shutdown -h 0
+sudo shutdown -h 0
+cd source
+./test
+nano test.c
+gcc -o test test.c
+gcc -o test test.c -alsound
+gcc -o test test.c -alsaund
+gcc -o test test.c -lsound
+gcc -o test test.c -alsound
+gcc -o test test.c -lasound
+clear
+./test
+gcc -o test test.c -lasound
+cd source
+gcc -o test test.c -lasound
+./test
+vi test.c
+gcc -o test test.c -lasound
+./test
+vi test.c
+gcc -o test test.c -lasound
+./test
+gcc -o test test.c -lasound
+./test
+vi test.c
+gcc -o test test.c -lasound
+./test
+vi test.c
+gcc -o test test.c -lasound
+vi test.c
+ls
+nano test.c
+gcc -o sizetest test.c -lasound
+./sizetest
+ls
+nano test.c
+./sizetest
+ls
+gcc -o test test.c -lasound
+./test
+gcc -o test test.c -lasound
+./test
+gcc -o test test.c -lasound
+vi test.c
+gcc -o test test.c -lasound
+./test
+vi test.c
+ls
+./adc
+ls
+nano main.cpp
+ls
+g++ -o adc main.cpp -lasound
+nano main.cpp
+vi main.cpp
+g++ -o adc main.cpp -lasound
+./adc
+vi main.cpp
+g++ -o adc main.cpp -lasound
+./adc
+vi main.cpp
+g++ -o adc main.cpp -lasound
+clear
+./adc
+vi main.cpp
+g++ -o adc main.cpp -lasound
+clear
+./adc
+g++ -o adc main.cpp -lasound
+vi main.cpp
+g++ -o adc main.cpp -lasound
+./adc
+vi main.cpp
+g++ -o adc main.cpp -lasound
+./adc
+vi main.cpp
+clear
+vi test.c
+gcc -o test test.c
+gcc -o test test.c -lasound
+./test
+vi test.c
+gcc -o test test.c -lasound
+./test
+vi test.c
+gcc -o test test.c -lasound
+./test
+vi test.c
+gcc -o test test.c -lasound
+./test
+vi test.c
+gcc -o test test.c -lasound
+vi test.c
+gcc -o test test.c -lasound
+./test
+exit
+ls
+cd source/
+ls
+nano main.cpp
+ls
+./adc
+ls
+rm sizetest 
+cat main.cpp > sizetest.cpp
+ls
+nano sizetest.cpp 
+ls
+g++ -o sizetest sizetest.cpp -lasound
+./sizetest 
+./sizetest
+nano sizetest.cpp 
+ls
+nano 32
+nano sizetest.cpp 
+g++ -o sizetest sizetest.cpp -lasound
+./sizetest 
+ls

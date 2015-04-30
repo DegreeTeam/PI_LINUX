@@ -73,7 +73,7 @@ int main() {
   snd_pcm_hw_params_get_period_size(params,
                                       &frames, &dir);
   size = frames * 1; /* 2 bytes/sample, 2 channels */
-printf("%d\n",size);
+  printf("size = %d\n",size);
   buffer = (unsigned char *) malloc(size);
 
   /* We want to loop for 5 seconds */
@@ -98,7 +98,6 @@ printf("size = %d\n",size);
     }
     //rc = write(1, buffer, size);
     for(int i =0;i <size;i++){ printf("%d ", buffer[i]);}
-	printf("\n\n\n\n\n\n\n\n\n");
 
     printf("\n");
    // if (rc != size)

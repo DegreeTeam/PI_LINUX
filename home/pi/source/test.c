@@ -1,16 +1,16 @@
-/*
-
-This example reads from the default PCM device
-and writes to standard output for 5 seconds of data.
-
-*/
-
-/* Use the newer ALSA API */
 #define ALSA_PCM_NEW_HW_PARAMS_API
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <signal.h>
+#include <errno.h>
 #include <alsa/asoundlib.h>
 
-int main() {
+ main() {
   long loops;
   int rc;
   int size;
@@ -20,6 +20,30 @@ int main() {
   int dir;
   snd_pcm_uframes_t frames;
   unsigned char *buffer;
+
+
+/* socket setting */
+   int sd;
+   struct sockaddr_in s_addr;
+//   char sndBuffer[BUFSIZE];
+   int n, n_send, status;
+
+   int on = 1;
+
+
+   sd = socket (AF_INET, SOCK_DGRAM, 0);
+
+   bzero(&s_addr, sizeof(s_addr));
+   s_addr.sin_family = AF_INET;
+   s_addr.sin_addr.s_addr = inet_addr("192.168.42.255");
+   s_addr.sin_port = htons(2007);
+
+   if((status = setsockopt(sd, SOL_SOCKET, SO_BROADCAST, &on, sizeof(on))) != 0 )
+   {
+      printf("setsockopt error\n");
+      exit(-1);
+   }
+
 
   /* Open PCM device for recording (capture). */
   rc = snd_pcm_open(&handle, "plughw:1,0",
@@ -56,7 +80,7 @@ int main() {
                                   &val, &dir);
 
   /* Set period size to 32 frames. */
-  frames =32; 
+  frames =44100;
   snd_pcm_hw_params_set_period_size_near(handle,
                               params, &frames, &dir);
 
@@ -73,17 +97,12 @@ int main() {
   snd_pcm_hw_params_get_period_size(params,
                                       &frames, &dir);
   size = frames * 1; /* 2 bytes/sample, 2 channels */
-printf("%d\n",size);
   buffer = (unsigned char *) malloc(size);
-
+	
   /* We want to loop for 5 seconds */
   snd_pcm_hw_params_get_period_time(params,
                                          &val, &dir);
-  loops = 50000000 / val;
-
-  while (loops > 0) {
-    loops--;
-printf("size = %d\n",size);
+  while (1) {
     rc = snd_pcm_readi(handle, buffer, frames);
     if (rc == -EPIPE) {
       /* EPIPE means overrun */
@@ -96,19 +115,15 @@ printf("size = %d\n",size);
     } else if (rc != (int)frames) {
       fprintf(stderr, "short read, read %d frames\n", rc);
     }
-    //rc = write(1, buffer, size);
-    for(int i =0;i <size;i++){ printf("%d ", buffer[i]);}
-	printf("\n\n\n\n\n\n\n\n\n");
-
-    printf("\n");
-   // if (rc != size)
-      //fprintf(stderr,
-              //"short write: wrote %d bytes\n", rc);
-  }
+if ((n_send = sendto(sd, buffer,strlen(buffer) , 0, (struct sockaddr *)&s_addr, sizeof(s_addr))) < 0 ) {
+         memset(buffer,0,strlen(buffer));
+	fprintf(stderr, "sendto() error");
+         exit(-3);
+      }
+   }
 
   snd_pcm_drain(handle);
   snd_pcm_close(handle);
   free(buffer);
-
-  return 0;
+   close(sd);
 }
