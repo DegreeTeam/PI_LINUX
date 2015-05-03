@@ -1212,3 +1212,616 @@ nano sizetest.cpp
 g++ -o sizetest sizetest.cpp -lasound
 ./sizetest 
 ls
+cd /
+ls
+git status
+sudo git add home etc
+git status
+sudo git status
+sudo git commit -m "sound and server"
+sudo git push PI master
+cd 
+ls
+cd source/
+ls
+nano test.c 
+ls
+gcc -o output test.c -lasound
+nano test.c 
+git diff test.c
+nano test.c 
+gcc -o output test.c -lasound
+./output
+nano test.c 
+gcc -o output test.c -lasound
+./
+./output
+nano test.c 
+./output
+nano test.c 
+./output
+ls
+sudo shutdown -h 0
+ls
+cd source
+ls
+nano sizetest
+nano sizetest.cpp
+nano main.cpp 
+ls
+nano test.c
+gcc -o output test.c -lasound
+./output
+nano test.c
+gcc -o output test.c -lasound
+./output 
+gcc -o output test.c -lasound
+nano test.c
+gcc -o output test.c -lasound
+./output
+nano test.c
+gcc -o output test.c -lasound
+./output
+nano test.c
+gcc -o output test.c -lasound
+./output
+nano test.c
+sudo shutdown -hj
+sudo shutdown -h 0
+cd source
+ls
+vi test.c
+gcc -o test1 test.c -lasound
+vi test.c
+gcc -o test1 test.c -lasound
+/test1
+.test1
+./test1
+vi test.c
+gcc -o test1 test.c -lasound
+./test1
+vi test.c
+./test1
+                                                                                                                                            cd source
+ls
+./test1
+vi test.c
+gcc -o test2 test.c -lasound
+./test2
+ls
+cd juni
+ls
+g++ -o output main.cpp -lasound
+gcc -o output main.cpp -lasound
+vi main.cpp
+gcc -o output main.cpp -lasound
+vi main.cpp
+gcc -o output main.cpp -lasound
+vi main.cpp
+gcc -o output main.cpp -lasound
+vi main.cpp
+clear
+./test.c
+ls
+cd source/
+ls
+nano sizetest.cpp
+nano test.c
+g++ -o output test.c -lasound
+nano test.c
+./output
+nano test.c
+g++ -o output test.c -lasound
+ls
+nano test.c
+ifconfig
+ls
+./output
+g++ -o output test.c -lasound
+nano test.c
+ls
+cd ..
+ls
+cd source/
+ls
+mkdir juni
+cd juni
+ls
+nano main.cpp
+g++ -o output main.cpp -lasound
+nano main.cpp
+ls
+nano main.cpp
+g++ -o output main.cpp -lasound
+ls
+g++ -o output main.cpp -lasound
+nano main.cpp
+ls
+nano main.cpp
+g++ -o output main.cpp -lasound
+nano main.cpp
+ls
+g++ -o output main.cpp -lasound
+cd ..
+ls
+nano main.cpp
+cd ..
+ls
+cd source
+ls
+nano test.c
+ls
+gcc -o qqqqq test.c -lasound
+nano test.c
+ls
+rm output 
+rm sizetest
+rm qqqqq 
+ls
+gcc -o qqqq test.c -lasound
+./qqqq
+sudo reboot
+cd source
+ls
+vi test.c
+gcc -o test3 test.c -lasound
+./test3
+gcc -o test3 test.c -lasound
+./test3
+gcc -o test3 test.c -lasound
+./test3
+vi test.c
+gcc -o test3 test.c -lasound
+./test3
+gcc -o test3 test.c -lasound
+./test3
+vi test.c
+gcc -o test3 test.c -lasound
+./test3
+vi test.c
+gcc -o test3 test.c -lasound
+./test3
+vi test.c
+./test3
+vi test.c
+gcc -o test3 test.c -lasound
+./test3
+vi test.c
+gcc -o test3 test.c -lasound
+./test3
+vi test.c
+gcc -o test3 test.c -lasound
+./test3
+ls usb
+lsusb
+aply -l
+aplay -l
+vi test.c
+gcc -o test3 test.c -lasound
+./test3
+gcc -o test3 test.c -lasound
+./test3
+exit
+ls
+cd source/
+ls
+./qqqq
+clear
+ls
+nano test.c
+ls
+nano test.c
+gcc -o debug test.c -lasound
+gcc -g -o debug test.c -lasound
+gdb debug
+ls
+sudo reboot
+cd source
+./test2
+./test3
+vi test.c
+gcc -o test4 test.c -lasound
+./test4
+vi test.c
+gcc -o test4 test.c -lasound
+./test4
+vi test.c
+gcc -o test4 test.c -lasound
+./test4
+gcc -o test4 test.c -lasound
+./test4
+vi test.c
+gcc -o test4 test.c -lasound
+./test4
+vi test.c
+gcc -o test4 test.c -lasound
+./test4
+vi test.c
+gcc -o test4 test.c -lasound
+./test4
+clear
+vi test.c
+gcc -o test4 test.c -lasound
+./test4
+vi test.c
+gcc -o test4 test.c -lasound
+vi test.c
+gcc -o test4 test.c -lasound
+vi test.c
+gcc -o test4 test.c -lasound
+vi test.c
+gcc -o test4 test.c -lasound
+vi test.c
+./test4
+vi test.c
+./test4
+vi test.c
+./test4
+gcc -o test4 test.c -lasound
+./test4
+vi test.c
+./test4
+vi test.c
+./test4
+vi test.c
+gcc -o test4 test.c -lasound
+./test4
+vi test.c
+gcc -o test4 test.c -lasound
+./test4
+vi test.c
+./test4
+gcc -o test4 test.c -lasound
+./test4
+vi test.c
+gcc -o test4 test.c -lasound
+./test4
+vi test.c
+gcc -o test4 test.c -lasound
+./test4
+nano test.c
+gcc -o test4 test.c -lasound
+./tes4
+./test4
+nano test.c
+gcc -o test4 test.c -lasound
+./test4
+gc -g c -o test4 test.c -lasound
+gcc -g  -o test4 test.c -lasound
+gdb test4
+./test4
+exit
+cd source
+./test4
+vi test.c
+gdb test4
+vi test.c
+gcc -g  -o test4 test.c -lasound
+./test4
+cd source
+./test4
+vi test.c
+gcc -g  -o test4 test.c -lasound
+vi test.c
+./test4
+ls
+vi test.c
+gcc -g  -o test4 test.c -lasound
+./test4
+vi test.c
+gcc -o test4 test.c -lasound
+
+vi test.c
+mv test.c stereo8.c
+cp stereo8.c test.c
+vi test.c
+gcc -o test4 test.c -lasound
+./test4
+vi test.c
+./test4
+vi test.c
+./test4
+vi test.c
+gcc -o test5 test.c
+gcc -o test5 test.c -lasound
+./test5
+gcc -o test5 test.c -lasound
+vi test.cv
+vi test.c
+gcc -o test5 test.c -lasound
+./test5
+vi test.c
+gcc -o test5 test.c -lasound
+./test5
+vi test.c
+gcc -o test5 test.c -lasound
+./test5
+vi test.c
+gcc -o test5 test.c -lasound
+./test5
+vi test.c
+gcc -o test5 test.c -lasound
+./test5
+vi test.c
+gcc -o test5 test.c -lasound
+./test5
+vi test.c
+gcc -o test5 test.c -lasound
+./test5
+exit
+cd source
+./test5
+vi test.c
+./test5
+vi test.c
+cp test.c test2.c
+vi test.c
+vi test2.c
+cd 
+cd usr
+cd /usr
+ls
+cd lib
+ls
+cd ..
+cd /src
+cd src
+ls
+ls -all
+cd /
+ls
+find -name "*alsa*"
+find -name "*alsa*" | grep .c
+sudo find -name "*alsa*" | grep .c
+cd /usr/include/
+ls
+cd alsa
+ls
+cd sound
+ls
+cd ..
+ls
+nano timer.h 
+cd
+cd source
+vi test2.c
+gcc -o f test2.c -lasound
+./f
+vi test2.c
+gcc -o f test2.c -lasound
+./f
+vi test2.c
+gcc -o f test2.c -lasound
+./f
+reboot
+sudo reboot
+cd source
+./f
+cd sourcce
+vi test2.c
+gcc -o f test2.c -lasound
+./f
+vi test2.c
+gcc -o f test2.c -lasound
+./f
+vi test2.c
+gcc -o f test2.c -lasound
+./f
+vi test2.c
+./f
+vi test2.c
+gcc -o f test2.c -lasound
+./f
+
+gcc -o f test2.c -lasound
+./f
+gcc -o f test2.c -lasound
+vi test2.c
+gcc -g -o f test2.c -lasound
+gdb f
+clear
+./y
+./f
+exit
+sudo shutdown -h 0
+./test5
+cd source
+./test5
+vi test.c
+gcc -o f test.c
+gcc -o 0503 test.c -lasound
+./0503
+vi test3.c
+vi test2.c
+./f
+vi
+ls
+vi test2.c
+gcc -o f test2.c
+gcc -o f test2.c -lasound
+vi test2.c
+./f
+vi test2.c
+gcc -o f test2.c -lasound
+./f
+vi test2.c
+gcc -o f test2.c -lasound
+./f
+vi test2.c
+gcc -o f test2.c -lasound
+./f
+vi test2.c
+gcc -o f test2.c -lasound
+./f
+vi test2.c
+gcc -o f test2.c -lasound
+./f
+vi test2.c
+gcc -o f test2.c -lasound
+./f
+gcc -o f test2.c -lasound
+vi test2.c
+gcc -o f test2.c -lasound
+./f
+gcc -o f test2.c -lasound
+./f
+cp test2 test
+cp test2.c test3.c
+vi test3.c [A
+gcc -o t test3.c -lasound
+./t
+ls
+./adc
+vi main.c
+vi main.cpp
+g++ -o adb main.cpp -lasound
+./adb
+vi main.cpp
+g++ -o adb main.cpp -lasound
+./adb
+vi test2.c
+gcc -o version1 test2.c
+gcc -o version1 test2.c -lasound
+./version1
+gcc -o version1 test2.c -lasound
+./version1
+vi test2.c
+gcc -o version1 test2.c -lasound
+./version1
+gcc -o version1 test2.c -lasound
+./version1
+vi test2.c
+gcc -o version1 test2.c -lasound
+./version1
+vi test2.c
+gcc -o version1 test2.c -lasound
+./version1 
+vi test2.c
+gcc -o version1 test2.c -lasound
+./version1 
+vi test2.c
+gcc -o version1 test2.c -lasound
+./version1 
+vi test2.c
+gcc -o version1 test2.c -lasound
+./version1 
+vi test2.c
+gcc -o version1 test2.c -lasound
+./version1 
+vi test2.c
+gcc -o version1 test2.c -lasound
+./version1 
+vi test2.c
+gcc -o version1 test2.c -lasound
+./version1 
+vi test2.c
+gcc -o version1 test2.c -lasound
+./version1
+gcc -o version1 test2.c -lasound
+./version1 
+reboot
+sudo reboot
+ls
+cd source/
+ls
+./f
+history
+ls
+./f
+history
+nano test2.c
+history
+gcc -g -o f test2.c -lasound
+./f
+nano test2.c
+gcc -g -o f test2.c -lasound
+gcc -o f test2.c -lasound
+./f
+nano test2.c
+gcc -o f test2.c -lasound
+./f
+nano test2.c
+./f
+nano test2.c
+gcc -o f test2.c -lasound
+./f
+nano test2.c
+history
+./test5
+nano test.c
+./f
+nano test.c
+git diff test.c
+ls
+cd jun
+cd juni
+l
+ls
+cd ..
+ls
+history
+ls
+cp test2.c ./juni
+ls
+cd juni
+ls
+gcc -o output test2.c -lasound
+nano test2.c
+gcc -o output test2.c -lasound
+./output
+nano test2.c
+gcc -o output test2.c -lasound
+./output
+ls
+nano test2.c
+gcc -o output test2.c -lasound
+./output
+nano test2.c
+gcc -o output test2.c -lasound
+./output
+cd ..
+history
+./test5
+git status
+sudo git status
+sudo git diff test.c
+sudo git status
+git commit
+git -help
+git --help
+git show
+git --help
+git log
+ls
+nano test.c
+nano tes5t.c
+nano test5.c
+nano test2.c
+history
+nano2.c
+nano test2.c
+./f
+ls
+git diff test2.c
+git diff test.c
+cd source
+./version1 
+gcc -o version1 test2.c
+gcc -o version2 test2.c -lasound
+./version2 
+vi test2.c
+./version2 
+clear
+vi test2.c
+./version2 
+vitest.c
+./version1
+ls
+./version1
+./version2
+./version2 
+gcc -o version2 test2.c -lasound
+./version2
+gcc -o version2 test2.c -lasound
+./version2 
+sudo reboot

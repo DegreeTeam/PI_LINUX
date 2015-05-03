@@ -19,8 +19,8 @@
   unsigned int val;
   int dir;
   snd_pcm_uframes_t frames;
-  unsigned char *buffer;
-
+ unsigned char *buffer;
+  int i=0;
 
 /* socket setting */
    int sd;
@@ -68,8 +68,7 @@
                       SND_PCM_ACCESS_RW_INTERLEAVED);
 
   /* Signed 16-bit little-endian format */
-  snd_pcm_hw_params_set_format(handle, params,
-                              SND_PCM_FORMAT_U8);
+  snd_pcm_hw_params_set_format(handle, params,SND_PCM_FORMAT_U8);
 
   /* Two channels (stereo) */
   snd_pcm_hw_params_set_channels(handle, params, 1);
@@ -80,7 +79,7 @@
                                   &val, &dir);
 
   /* Set period size to 32 frames. */
-  frames =44100;
+  frames =4800;
   snd_pcm_hw_params_set_period_size_near(handle,
                               params, &frames, &dir);
 
@@ -96,14 +95,17 @@
   /* Use a buffer large enough to hold one period */
   snd_pcm_hw_params_get_period_size(params,
                                       &frames, &dir);
-  size = frames * 1; /* 2 bytes/sample, 2 channels */
-  buffer = (unsigned char *) malloc(size);
+  size = frames *1; /* 2 bytes/sample, 2 channels */
+
+  buffer = (unsigned char*) malloc(size);
 	
   /* We want to loop for 5 seconds */
   snd_pcm_hw_params_get_period_time(params,
                                          &val, &dir);
+  printf("frames size = %d\n",frames);
   while (1) {
     rc = snd_pcm_readi(handle, buffer, frames);
+
     if (rc == -EPIPE) {
       /* EPIPE means overrun */
       fprintf(stderr, "overrun occurred\n");
@@ -115,13 +117,12 @@
     } else if (rc != (int)frames) {
       fprintf(stderr, "short read, read %d frames\n", rc);
     }
-if ((n_send = sendto(sd, buffer,strlen(buffer) , 0, (struct sockaddr *)&s_addr, sizeof(s_addr))) < 0 ) {
-         memset(buffer,0,strlen(buffer));
+
+if ((n_send = sendto(sd, buffer, strlen(buffer), 0, (struct sockaddr *)&s_addr, sizeof(s_addr))) < 0 ) {
 	fprintf(stderr, "sendto() error");
          exit(-3);
       }
    }
-
   snd_pcm_drain(handle);
   snd_pcm_close(handle);
   free(buffer);
