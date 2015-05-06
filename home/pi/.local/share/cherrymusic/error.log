@@ -1,0 +1,320 @@
+--------------------------------------------------------------------------------
+ERROR    [2015-05-04 16:53:31,312] : cherrypy.error.16635472 : from line (201) at
+	/home/pi/cherryMusic/cherrymusic/cherrypy/_cplogging.py
+	--
+	[04/May/2015:16:53:31] HTTP Traceback (most recent call last):
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 289, in api
+    return handler(**handler_args)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 418, in api_fetchalbumart
+    img_data = self.albumartcache_load(b64imgpath)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 459, in albumartcache_load
+    with open(imgb64path, 'rb') as f:
+IOError: [Errno 21] Is a directory: '/home/pi/.local/share/cherrymusic/albumart'
+
+
+--------------------------------------------------------------------------------
+ERROR    [2015-05-04 16:54:48,210] : cherrypy.error.16635472 : from line (201) at
+	/home/pi/cherryMusic/cherrymusic/cherrypy/_cplogging.py
+	--
+	[04/May/2015:16:54:48] HTTP Traceback (most recent call last):
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 289, in api
+    return handler(**handler_args)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 418, in api_fetchalbumart
+    img_data = self.albumartcache_load(b64imgpath)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 459, in albumartcache_load
+    with open(imgb64path, 'rb') as f:
+IOError: [Errno 21] Is a directory: '/home/pi/.local/share/cherrymusic/albumart'
+
+
+--------------------------------------------------------------------------------
+ERROR    [2015-05-04 16:54:50,550] : cherrypy.error.16635472 : from line (201) at
+	/home/pi/cherryMusic/cherrymusic/cherrypy/_cplogging.py
+	--
+	[04/May/2015:16:54:50] HTTP Traceback (most recent call last):
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 289, in api
+    return handler(**handler_args)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 418, in api_fetchalbumart
+    img_data = self.albumartcache_load(b64imgpath)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 459, in albumartcache_load
+    with open(imgb64path, 'rb') as f:
+IOError: [Errno 21] Is a directory: '/home/pi/.local/share/cherrymusic/albumart'
+
+
+--------------------------------------------------------------------------------
+ERROR    [2015-05-04 16:55:12,542] : cherrypy.error.16635472 : from line (201) at
+	/home/pi/cherryMusic/cherrymusic/cherrypy/_cplogging.py
+	--
+	[04/May/2015:16:55:12] HTTP Traceback (most recent call last):
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 289, in api
+    return handler(**handler_args)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 418, in api_fetchalbumart
+    img_data = self.albumartcache_load(b64imgpath)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 459, in albumartcache_load
+    with open(imgb64path, 'rb') as f:
+IOError: [Errno 21] Is a directory: '/home/pi/.local/share/cherrymusic/albumart'
+
+
+--------------------------------------------------------------------------------
+ERROR    [2015-05-04 16:55:26,181] : cherrypy.error.16635472 : from line (201) at
+	/home/pi/cherryMusic/cherrymusic/cherrypy/_cplogging.py
+	--
+	[04/May/2015:16:55:26] HTTP Traceback (most recent call last):
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 289, in api
+    return handler(**handler_args)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 418, in api_fetchalbumart
+    img_data = self.albumartcache_load(b64imgpath)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 459, in albumartcache_load
+    with open(imgb64path, 'rb') as f:
+IOError: [Errno 21] Is a directory: '/home/pi/.local/share/cherrymusic/albumart'
+
+
+--------------------------------------------------------------------------------
+ERROR    [2015-05-04 16:55:30,515] : cherrypy.error.16635472 : from line (201) at
+	/home/pi/cherryMusic/cherrymusic/cherrypy/_cplogging.py
+	--
+	[04/May/2015:16:55:30] HTTP Traceback (most recent call last):
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 289, in api
+    return handler(**handler_args)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 418, in api_fetchalbumart
+    img_data = self.albumartcache_load(b64imgpath)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 459, in albumartcache_load
+    with open(imgb64path, 'rb') as f:
+IOError: [Errno 21] Is a directory: '/home/pi/.local/share/cherrymusic/albumart'
+
+
+--------------------------------------------------------------------------------
+ERROR    [2015-05-04 16:55:54,556] : cherrypy.error.16635472 : from line (201) at
+	/home/pi/cherryMusic/cherrymusic/cherrypy/_cplogging.py
+	--
+	[04/May/2015:16:55:54] HTTP Traceback (most recent call last):
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 289, in api
+    return handler(**handler_args)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 418, in api_fetchalbumart
+    img_data = self.albumartcache_load(b64imgpath)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 459, in albumartcache_load
+    with open(imgb64path, 'rb') as f:
+IOError: [Errno 21] Is a directory: '/home/pi/.local/share/cherrymusic/albumart'
+
+
+--------------------------------------------------------------------------------
+ERROR    [2015-05-04 16:58:04,494] : cherrypy.error.16635472 : from line (201) at
+	/home/pi/cherryMusic/cherrymusic/cherrypy/_cplogging.py
+	--
+	[04/May/2015:16:58:04] HTTP Traceback (most recent call last):
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 289, in api
+    return handler(**handler_args)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 418, in api_fetchalbumart
+    img_data = self.albumartcache_load(b64imgpath)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 459, in albumartcache_load
+    with open(imgb64path, 'rb') as f:
+IOError: [Errno 21] Is a directory: '/home/pi/.local/share/cherrymusic/albumart'
+
+
+--------------------------------------------------------------------------------
+ERROR    [2015-05-04 16:59:12,883] : cherrypy.error.16635472 : from line (201) at
+	/home/pi/cherryMusic/cherrymusic/cherrypy/_cplogging.py
+	--
+	[04/May/2015:16:59:12] HTTP Traceback (most recent call last):
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 289, in api
+    return handler(**handler_args)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 418, in api_fetchalbumart
+    img_data = self.albumartcache_load(b64imgpath)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 459, in albumartcache_load
+    with open(imgb64path, 'rb') as f:
+IOError: [Errno 21] Is a directory: '/home/pi/.local/share/cherrymusic/albumart'
+
+
+--------------------------------------------------------------------------------
+ERROR    [2015-05-04 16:59:37,379] : cherrypy.error.16635472 : from line (201) at
+	/home/pi/cherryMusic/cherrymusic/cherrypy/_cplogging.py
+	--
+	[04/May/2015:16:59:37] HTTP Traceback (most recent call last):
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 289, in api
+    return handler(**handler_args)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 418, in api_fetchalbumart
+    img_data = self.albumartcache_load(b64imgpath)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 459, in albumartcache_load
+    with open(imgb64path, 'rb') as f:
+IOError: [Errno 21] Is a directory: '/home/pi/.local/share/cherrymusic/albumart'
+
+
+--------------------------------------------------------------------------------
+ERROR    [2015-05-04 16:59:55,119] : cherrypy.error.16635472 : from line (201) at
+	/home/pi/cherryMusic/cherrymusic/cherrypy/_cplogging.py
+	--
+	[04/May/2015:16:59:55] HTTP Traceback (most recent call last):
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 289, in api
+    return handler(**handler_args)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 418, in api_fetchalbumart
+    img_data = self.albumartcache_load(b64imgpath)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 459, in albumartcache_load
+    with open(imgb64path, 'rb') as f:
+IOError: [Errno 21] Is a directory: '/home/pi/.local/share/cherrymusic/albumart'
+
+
+--------------------------------------------------------------------------------
+ERROR    [2015-05-04 17:01:17,166] : cherrypy.error.16635472 : from line (201) at
+	/home/pi/cherryMusic/cherrymusic/cherrypy/_cplogging.py
+	--
+	[04/May/2015:17:01:17] HTTP Traceback (most recent call last):
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 289, in api
+    return handler(**handler_args)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 418, in api_fetchalbumart
+    img_data = self.albumartcache_load(b64imgpath)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 459, in albumartcache_load
+    with open(imgb64path, 'rb') as f:
+IOError: [Errno 21] Is a directory: '/home/pi/.local/share/cherrymusic/albumart'
+
+
+--------------------------------------------------------------------------------
+ERROR    [2015-05-04 17:14:19,436] : cherrypy.error.16635472 : from line (201) at
+	/home/pi/cherryMusic/cherrymusic/cherrypy/_cplogging.py
+	--
+	[04/May/2015:17:14:19] HTTP Traceback (most recent call last):
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 289, in api
+    return handler(**handler_args)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 418, in api_fetchalbumart
+    img_data = self.albumartcache_load(b64imgpath)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 459, in albumartcache_load
+    with open(imgb64path, 'rb') as f:
+IOError: [Errno 21] Is a directory: '/home/pi/.local/share/cherrymusic/albumart'
+
+
+--------------------------------------------------------------------------------
+ERROR    [2015-05-05 07:23:08,477] : cherrypy.error.22862480 : from line (201) at
+	/home/pi/cherryMusic/cherrymusic/cherrypy/_cplogging.py
+	--
+	[05/May/2015:07:23:08] HTTP Traceback (most recent call last):
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 289, in api
+    return handler(**handler_args)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 418, in api_fetchalbumart
+    img_data = self.albumartcache_load(b64imgpath)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 459, in albumartcache_load
+    with open(imgb64path, 'rb') as f:
+IOError: [Errno 21] Is a directory: '/home/pi/.local/share/cherrymusic/albumart'
+
+
+--------------------------------------------------------------------------------
+ERROR    [2015-05-05 07:24:21,744] : cherrypy.error.22862480 : from line (201) at
+	/home/pi/cherryMusic/cherrymusic/cherrypy/_cplogging.py
+	--
+	[05/May/2015:07:24:21] HTTP Traceback (most recent call last):
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 289, in api
+    return handler(**handler_args)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 418, in api_fetchalbumart
+    img_data = self.albumartcache_load(b64imgpath)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 459, in albumartcache_load
+    with open(imgb64path, 'rb') as f:
+IOError: [Errno 21] Is a directory: '/home/pi/.local/share/cherrymusic/albumart'
+
+
+--------------------------------------------------------------------------------
+ERROR    [2015-05-05 07:25:17,858] : cherrypy.error.22862480 : from line (201) at
+	/home/pi/cherryMusic/cherrymusic/cherrypy/_cplogging.py
+	--
+	[05/May/2015:07:25:17] HTTP Traceback (most recent call last):
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 289, in api
+    return handler(**handler_args)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 418, in api_fetchalbumart
+    img_data = self.albumartcache_load(b64imgpath)
+  File "/home/pi/cherryMusic/cherrymusic/cherrymusicserver/httphandler.py", line 459, in albumartcache_load
+    with open(imgb64path, 'rb') as f:
+IOError: [Errno 21] Is a directory: '/home/pi/.local/share/cherrymusic/albumart'
+
+

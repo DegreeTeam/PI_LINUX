@@ -47,7 +47,6 @@
   /* Open PCM device for recording (capture). */
   rc = snd_pcm_open(&handle, "plughw:1,0",
                     SND_PCM_STREAM_CAPTURE, 0);
-printf(" rc = %d ", rc);
   if (rc < 0) {
     fprintf(stderr,
             "unable to open pcm device: %s\n",
@@ -79,7 +78,7 @@ printf(" rc = %d ", rc);
                                   &val, &dir);
 
   /* Set period size to 32 frames. */
-  frames =44100;
+  frames =4800;
   snd_pcm_hw_params_set_period_size_near(handle,
                               params, &frames, &dir);
 
@@ -104,7 +103,6 @@ printf(" rc = %d ", rc);
                                          &val, &dir);
   while (1) {
     rc = snd_pcm_readi(handle, buffer, frames);
-    printf("rc = %d" , rc);
     if (rc == -EPIPE) {
       /* EPIPE means overrun */
       fprintf(stderr, "overrun occurred\n");

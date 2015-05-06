@@ -57,3 +57,4 @@ avahi:x:112:
 bluetooth:x:113:
 ssl-cert:x:114:
 saned:x:115:
+sambashare:x:116:

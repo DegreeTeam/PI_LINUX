@@ -28,3 +28,4 @@ colord:x:107:111:colord colour management daemon,,,:/var/lib/colord:/bin/false
 avahi:x:108:112:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/bin/false
 hplip:x:109:7:HPLIP system user,,,:/var/run/hplip:/bin/false
 saned:x:110:115::/home/saned:/bin/false
+mpd:x:111:29::/var/lib/mpd:/bin/false

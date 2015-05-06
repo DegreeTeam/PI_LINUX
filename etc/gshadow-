@@ -51,7 +51,7 @@ lightdm:!::
 indiecity:!::root
 spi:!::pi
 gpio:!::pi
-scanner:!::
+scanner:!::saned
 colord:!::
 avahi:!::
 bluetooth:!::

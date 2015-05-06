@@ -1,10 +1,12 @@
-TARGETS = triggerhappy ifplugd fake-hwclock hostapd isc-dhcp-server bluetooth lightdm cups saned plymouth urandom alsa-utils avahi-daemon sendsigs rsyslog umountnfs.sh rpcbind nfs-common hwclock.sh networking umountfs umountroot halt reboot
+TARGETS = triggerhappy ifplugd fake-hwclock hostapd mpd isc-dhcp-server bluetooth lightdm saned samba plymouth urandom avahi-daemon cups alsa-utils sendsigs rsyslog umountnfs.sh rpcbind nfs-common hwclock.sh networking umountfs umountroot halt reboot
 avahi-daemon: saned
-sendsigs: avahi-daemon triggerhappy ifplugd hostapd bluetooth alsa-utils lightdm plymouth isc-dhcp-server saned
-rsyslog: avahi-daemon sendsigs bluetooth isc-dhcp-server cups saned
-umountnfs.sh: avahi-daemon triggerhappy ifplugd hostapd rsyslog bluetooth alsa-utils lightdm plymouth isc-dhcp-server sendsigs saned
-networking: rpcbind umountnfs.sh ifplugd isc-dhcp-server
-umountfs: avahi-daemon triggerhappy rpcbind urandom umountnfs.sh ifplugd hwclock.sh hostapd bluetooth alsa-utils lightdm plymouth isc-dhcp-server networking saned
+cups: samba
+alsa-utils: mpd
+sendsigs: avahi-daemon triggerhappy ifplugd samba hostapd alsa-utils bluetooth lightdm plymouth isc-dhcp-server mpd saned
+rsyslog: avahi-daemon sendsigs bluetooth isc-dhcp-server saned cups
+umountnfs.sh: avahi-daemon triggerhappy ifplugd samba hostapd rsyslog alsa-utils bluetooth lightdm plymouth isc-dhcp-server mpd sendsigs saned
+networking: rpcbind umountnfs.sh ifplugd samba isc-dhcp-server mpd
+umountfs: avahi-daemon triggerhappy rpcbind urandom umountnfs.sh ifplugd hwclock.sh samba hostapd alsa-utils bluetooth lightdm plymouth isc-dhcp-server mpd networking saned
 umountroot: umountfs fake-hwclock
 halt: umountroot
 reboot: umountroot
