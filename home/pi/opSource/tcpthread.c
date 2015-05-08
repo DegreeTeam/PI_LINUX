@@ -10,37 +10,43 @@
 #include <signal.h>
 #include <errno.h>
 #include <alsa/asoundlib.h>
+#include <signal.h>
+#include <unistd.h>
 
-#define SIZE 128 
 #define ALSA_PCM_NEW_HW_PARAMS_API
+#define SIZE 1024
 
 void *connection_handler(void *);
 void *data_streaming(void *);
+void usr_handler(int signo);
+
 pthread_mutex_t  mutex = PTHREAD_MUTEX_INITIALIZER;
 unsigned char *buffer;
-int *flag;
-int cnt = -1;
+int *sigid;
+int cnt = 0;
 
 int main(int argc , char *argv[])
 {
     int socket_desc , client_sock , c , *new_sock;
     struct sockaddr_in server , client;
     pthread_t sniffer_thread1;
-   int option = 1;
     buffer = (unsigned char *) malloc(SIZE);
-    flag = (int *) malloc( sizeof(int));
-    memset(flag, 0, sizeof(int));
+    sigid = (int *) malloc(sizeof(int) * 40);
+    memset(sigid, 0, sizeof(int) * 40);
+
     //Prepare the sockaddr_in structure
     server.sin_family = AF_INET;
     server.sin_addr.s_addr = htonl(INADDR_ANY);
     server.sin_port = htons( 2008 );
+
+
     //Create socket
     socket_desc = socket(AF_INET , SOCK_STREAM , 0);
     if (socket_desc == -1)
     {
         printf("Could not create socket");
     }
-    setsockopt(socket_desc, SOL_SOCKET,SO_REUSEADDR,&option, sizeof(option));
+
     //Bind
     if( bind(socket_desc,(struct sockaddr *)&server , sizeof(server)) < 0)
     {
@@ -48,6 +54,7 @@ int main(int argc , char *argv[])
         perror("bind failed. Error");
         return 1;
     }
+    puts("bind done");
 
     //Listen
     listen(socket_desc , 3);
@@ -55,6 +62,8 @@ int main(int argc , char *argv[])
     //Accept and incoming connection
     puts("Waiting for incoming connections...");
     c = sizeof(struct sockaddr_in);
+
+    pthread_t sniffer_thread;
 
     if(pthread_create(&sniffer_thread1 , NULL , data_streaming , (void*) new_sock) < 0)
        {
@@ -64,11 +73,9 @@ int main(int argc , char *argv[])
 
     while(1){
 
-    pthread_t sniffer_thread;
     if(client_sock = accept(socket_desc, (struct sockaddr *)&client, (socklen_t*)&c))
         {
-               	cnt++;
-		 puts("Connection accepted");
+		puts("Connection accepted");
                 new_sock = malloc(4);
                 *new_sock = client_sock;
         }
@@ -77,14 +84,16 @@ int main(int argc , char *argv[])
             perror("could not create thread");
             return 1;
         }
-        pthread_join( sniffer_thread , NULL);
+	sigid[cnt++] = sniffer_thread;
+        //Now join the thread , so that we dont terminate before the thread
+        //pthread_join( sniffer_thread , NULL);
         puts("Handler assigned");
 
 
     if (client_sock < 0)
     {
         perror("accept failed");
-
+        return 1;
     }
 }
     return 0;
@@ -95,22 +104,30 @@ int main(int argc , char *argv[])
  * */
 void *connection_handler(void *socket_desc)
 {
+    struct sigaction sa_usr1;
+
+   memset(&sa_usr1, 0, sizeof(sa_usr1));
+   sa_usr1.sa_handler =usr_handler;
+   sigemptyset(&sa_usr1.sa_mask);
+   sigaction(SIGUSR1, &sa_usr1, NULL);
+
     //Get the socket descriptor
     int sock = *(int*)socket_desc;
-   int f = cnt;
-   int i;
- printf("f : %d", f);
-	while(1){
-	      if(flag[f] == 1){
-			i = send(sock, buffer, SIZE, 0);
-              		if(i < 0)
-				break;
-			flag[f] =  0;	
+
+	for(;;){
+		pause();
+		if (send(sock, buffer, SIZE, 0) <= 0) {
+			break;
 		}
-        }
-   close(sock);
- printf("close sock");
+	}
+	close(sock);
+	free(socket_desc);
+    return 0;
 }
+
+void usr_handler(int signum){
+}
+
 
 void *data_streaming(void *socket_desc)
 {
@@ -120,7 +137,7 @@ void *data_streaming(void *socket_desc)
   unsigned int val;
   int dir;
   snd_pcm_uframes_t frames;
-
+  int i;
 
   /* Open PCM device for recording (capture). */
   rc = snd_pcm_open(&handle, "plughw:1,0",
@@ -180,11 +197,13 @@ void *data_streaming(void *socket_desc)
   /* We want to loop for 5 seconds */
   snd_pcm_hw_params_get_period_time(params,
                                          &val, &dir);
+  
   while (1) {
         pthread_mutex_lock(&mutex);
-   	 rc = snd_pcm_readi(handle, buffer, frames);
-        memset(flag, 1, sizeof(int));
+   	rc = snd_pcm_readi(handle, buffer, frames);
         pthread_mutex_unlock(&mutex);
+	 for (i = 0; i < cnt; i++)
+		pthread_kill(sigid[i],SIGUSR1);
     if (rc == -EPIPE) {
       /* EPIPE means overrun */
       fprintf(stderr, "overrun occurred\n");
@@ -201,9 +220,5 @@ void *data_streaming(void *socket_desc)
   snd_pcm_drain(handle);
   snd_pcm_close(handle);
   free(buffer);
-
-    return 0;
+  return 0;
 }
-
-
-
